@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>부트스트랩 웹 페이지</title>
+	<link rel="icon" href="images/logo.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<Link rel="stylesheet" href="./css/bootstrap.css" />
+
+	<style type="text/css">
+		.jumbotron {
+			background-image: url("./images/jumbotronBackground.jpg");
+			background-size: cover;
+			color: white;
+			font-family: cookierun;
+			text-shadow: 0.1em 0.1em 0.1em black;
+		}
+	</style>
+	<script type="text/javascript" src="./js/jquery-3.7.1.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.js"></script>
+
+</head>
+<body>
+
+	<header>
+		<!-- 내비게이션 시작 -->
+		<nav class="container navbar navbar-inverse">
+			<div class="container-fluid">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#아이디"
+						aria-expanded="false">
+						<span class="sr-only"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="nav-toggle">
+
+					<ul class="nav navbar-nav">
+						<li><a href="./index5.html">메인으로</a></li>
+						<li><a href="./instrutor.html">강사진</a></li>
+						<li class="dropdown">
+							<a href="./lecture.html?lectureName=C" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">
+								강의 보기
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="./lecture.html?lectureName=C">C++</a></li>
+								<li><a href="./lecture.html?lectureName=Java">JAVA</a></li>
+								<li><a href="./lecture.html?lectureName=Android">ANDROID</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<form class="navbar-form navbar-right" action>
+						<div class="form-group">
+							<input class="form-control" type="text" placeholder="SEARCH">
+						</div>
+						<button class="btn btn-primary" type="button">SUBMIT</button>
+					</form>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">
+								LOGIN
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="./loginForm.html">로그인</a></li>
+								<li><a href="./registerForm.html">회원가입</a></li>
+							</ul>
+						</li>
+					</ul>
+
+				</div> <!--collapse navbar-collapse -->
+			</div> <!-- container-fluid -->
+		</nav> <!-- container navbar navbar-inverse -->
+	</header> <!-- container -->
+
+<div class="container">
+	<!-- 여기부터 -->
+	<div class="row">
+		<div class="col-lg-12">
+			
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						강사
+					</h3>
+				</div>
+				
+				<div class="panel-body">
+					<div class="media">
+						<div class="media-left">
+							<img class="medi-object" src="./images/logo.png">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">페이몬</h4>
+							2021년 출시 원신 마스코트 등재<br/>
+							2024년 출시 이래 최대 위기
+						</div>
+					</div>
+				</div>
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<td>강사명</td>
+						<td>강의번호</td>
+						<td>강의제목</td>
+						<td>강의날짜</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>페이몬</td>
+						<td>1</td>
+						<td ><a href="./lecture.html?lectureName=C">붕괴3rd</a></td>
+						<td>24-01-09</td>
+					</tr>
+					<tr>
+						<td>페이몬</td>
+						<td>2</td>
+						<td ><a href="./lecture.html?lectureName=Java">원신</a></td>
+						<td>24-01-09</td>
+					</tr>
+					<tr>
+						<td>페이몬</td>
+						<td>3</td>
+						<td ><a href="./lecture.html?lectureName=Android">붕괴 스타레일</a></td>
+						<td>24-01-09</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			</div> <!-- panel panel-primary -->
+		</div> <!-- col-lg-12 -->
+	</div> <!-- row -->
+	
+	<div class="row">
+		<div class="col-lg-12">
+			
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						자격사항
+					</h3>
+				</div>
+				
+				<div class="panel-body">
+					<div class="media">
+						<div class="media-body">
+							ㅅㅂ쓸게없다<br/>
+							세계최초우리엄마아들<br/>
+							육군병장만기전역<br/>
+							원신 나선비경 36별<br/>
+							
+							
+						</div>
+					</div> <!-- media -->
+				</div> <!-- panel-body -->
+			</div> <!-- panel panel-primary -->
+		</div> <!-- col-lg-12 -->
+	</div> <!-- row -->
+	<!-- 여기까지 instructor.html에 코딩해 넣는 내용 -->
+	
+</div> <!-- container -->
+
+<footer>
+	<div class="container">
+		<div class="row" style="background-color: black; color: white;" >
+			
+			<div class="col-sm-2 text-center">
+				<h5>Copyright &copy;</h5>
+			</div>
+				
+			<div class="col-sm-4">
+				<h5>대표자 소개</h5>
+				<h5>
+					반갑다
+				</h5>
+			</div>
+			
+			<div class="col-sm-2 text-center">
+				<h5>내비게이션</h5>
+				<div class="list-group">
+					<a href="index5.html" class="list-group-item">메인으로</a>
+					<a href="./instrutor.html" class="list-group-item">강사진</a>
+					<a href="./lecture.html?lectureName=C" class="list-group-item">강의 보기</a>
+				</div>
+			</div>
+				
+			<div class="col-sm-2 text-center">
+				<h5>SNS</h5>
+				<div class="list-group">
+					<a href="#" class="list-group-item">YOUTUBE</a>
+					<a href="#" class="list-group-item">META</a>
+					<a href="#" class="list-group-item">KAKAO TV</a>
+				</div>
+			</div>
+				
+			<div class="col-sm-2">
+				<h5>
+					<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp; by UM
+				</h5>
+			</div>
+				
+			
+		</div>
+	</div> <!-- container -->
+</footer>
+<!-- 풋터 끝 -->
+	
+	
+	
+	
+</body> 
+</html>

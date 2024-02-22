@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>부트스트랩 웹 페이지</title>
+	<link rel="icon" href="images/logo.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<Link rel="stylesheet" href="./css/bootstrap.css" />
+
+	<style type="text/css">
+		.jumbotron {
+			background-image: url("./images/jumbotronBackground.jpg");
+			background-size: cover;
+			color: white;
+			font-family: cookierun;
+			text-shadow: 0.1em 0.1em 0.1em black;
+		}
+	</style>
+	<script type="text/javascript" src="./js/jquery-3.7.1.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.js"></script>
+
+</head>
+
+<body>
+
+	<header>
+		<nav class="container navbar navbar-inverse">
+			<div class="container-fluid">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#아이디"
+						aria-expanded="false">
+						<span class="sr-only"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="nav-toggle">
+
+					<ul class="nav navbar-nav">
+						<li><a href="#">소개</a></li>
+						<li><a href="#">강사진</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">
+								강의 보기
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">C++</a></li>
+								<li><a href="#">JAVA</a></li>
+								<li><a href="#">ANDROID</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<form class="navbar-form navbar-right" action>
+						<div class="form-group">
+							<input class="form-control" type="text" placeholder="SEARCH">
+						</div>
+						<button class="btn btn-primary" type="button">SUBMIT</button>
+					</form>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">
+								LOGIN
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">로그인</a></li>
+								<li><a href="#">회원가입</a></li>
+							</ul>
+						</li>
+					</ul>
+
+				</div> <!--collapse navbar-collapse -->
+			</div> <!-- container-fluid -->
+		</nav> <!-- container navbar navbar-inverse -->
+	</header> <!-- container -->
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">온라인 코딩 강좌 사이트</h1>
+			<p class="text-center">
+				본 사이트는 IT 교육 사이트입니다. 다양한 IT 관련 강의가 존재합니다.
+			</p>
+			<p class="text-center">
+				<a class="btn btn-primary btn-lg" href="#" role="button">강의 확인하기</a>
+			</p>
+
+		</div> <!-- jumbotron -->
+		
+		<div class="row" style="font-family: cookierun;">
+			
+			<!-- 4 -->
+			<div class="col-md-4">
+				<h4>코딩특</h4>
+				<p>매일 배우는데 다음날 보면 까먹음</p>
+				<p class="text-center">
+					<a href="#" class="btn btn-success" data-target="#modal" data-toggle="modal">눌러서 자세히</a>
+				</p>
+			</div>
+			
+			<!-- 4 -->
+			<div class="col-md-4">
+				<h4>점심 뭐먹지</h4>
+				<p>사발면(산지1주일됨)+삼김</p>
+				<p class="text-center">
+					<a href="#" class="btn btn-success" data-target="#modal2" data-toggle="modal">눌러서 자세히</a>
+				</p>
+				
+			</div>
+			
+			
+			<!-- 4 -->
+			<div class="col-md-4">
+				<h4>오늘집가면할일</h4>
+				<p>일찍 자기</p>
+				<p class="text-center">
+					<a href="#" class="btn btn-success" data-target="#modal3" data-toggle="modal">눌러서 자세히</a>
+				</p>
+				
+			</div>
+			
+			
+		</div>
+		
+		
+	</div>  <!--container -->
+	
+<!--
+	모달(modal)
+	모달은 팝업창을 의미한다.
+	상세 정보를 보여주는 페이지나 로그인 및 회원가입이 팝업 창에서 이루어지도록 할 때 부트스트랩의
+	모달 컴포넌트를 사용한다.
+-->
+	
+<!-- 모달 팝업으로 표시할 내용 -->
+<div id="modal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				코딩특
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body text-center">
+				다음날 다 까먹음<br/>
+				<img src="./images/youtube.jpg" width="300px"/>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-basic" data-dismiss="modal">close</button>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<div id="modal2" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				점심 뭐먹지
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body text-center">
+				돈아끼자...<br/>
+				<img src="./images/youtube.jpg" width="300px"/>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-basic" data-dismiss="modal">close</button>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<div id="modal3" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				오늘집가면할일
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body text-center">
+				자라.<br/>
+				<img src="./images/youtube.jpg" width="300px"/>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-basic" data-dismiss="modal">close</button>
+			</div>
+		</div>
+	</div>	
+</div>
+
+	
+<footer>
+	<div class="container">
+		<div class="row" style="background-color: black; color: white;" >
+			
+			<div class="col-sm-2 text-center">
+				<h5>Copyright &copy;</h5>
+			</div>
+				
+			<div class="col-sm-4">
+				<h5>대표자 소개</h5>
+				<h5>
+					HI
+				</h5>
+			</div>
+			
+			<div class="col-sm-2 text-center">
+				<h5>내비게이션</h5>
+				<div class="list-group">
+					<a href="#" class="list-group-item">소개</a>
+					<a href="#" class="list-group-item">강사진</a>
+					<a href="#" class="list-group-item">강의 보기</a>
+				</div>
+			</div>
+				
+			<div class="col-sm-2 text-center">
+				<h5>SNS</h5>
+				<div class="list-group">
+					<a href="#" class="list-group-item">YOUTUBE</a>
+					<a href="#" class="list-group-item">META</a>
+					<a href="#" class="list-group-item">KAKAO TV</a>
+				</div>
+			</div>
+				
+			<div class="col-sm-2">
+				<h5>
+					<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp; by UM
+				</h5>
+			</div>
+				
+			
+		</div>
+	</div> <!-- container -->
+</footer>
+	
+	
+	
+	
+	
+</body> 
+</html>
